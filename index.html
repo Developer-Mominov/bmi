@@ -20,20 +20,7 @@
     body{
         background: #fff;
     }
-    nav{
-
-        width: 70%;
-        margin: 20px  auto;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        padding: 0px 15px;
-        border:2px solid #333;
-        /* background: rgba(0, 0, 0, 0.3);
-        backdrop-filter: 50px;*/
-        border-radius: 20px; 
-        background: #333;
-      }
+   
       .div{
           width: 70%;
 
@@ -144,6 +131,7 @@
     }
     .load{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         width: 100%;
         height: 100vh;
@@ -152,7 +140,11 @@
         color:#fff;
         font-family: monospace;
     }
-
+   .load h3{
+       font-family: sans-serif;
+       color: indianred;
+       font-weight: 400;
+   }
     body{
         width: 100%;
         height: 100%;
@@ -210,7 +202,10 @@
     
     <div class="load">
         <h2>HMT team's product </h2>
+        <br>
+        <h3>BMI calculator</h3>    
     </div>
+    
     <div class="bmi">
 
         <nav><h2>BMI calculator</h2></nav>
@@ -267,7 +262,7 @@
                 $(".load").hide(1000);
                 $("body").css("overflow","auto");
                  
-            }, 1500);
+            }, 1650);
            
             
             setTimeout(() => 
@@ -275,7 +270,7 @@
                 
                 $(".bmi").show(1000);
                  
-            }, 1600);
+            }, 1750);
            
         }
 
