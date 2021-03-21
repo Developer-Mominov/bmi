@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI calculator</title>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap" rel="stylesheet">
+    
+
     <style>
       *{
           margin:0;
           padding:0;
-          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+          font-family: 'Lemonada', cursive;
           box-sizing: border-box;
           user-select: none;
     }
@@ -29,16 +33,17 @@
           border-radius: 20px;
           padding: 15px;
            
-        background: #333;
+        background: #191919;
       }
     nav h2{
         color: #fff;
         font-weight: 400;
     }
     .div h3{
-        font-family: sans-serif;
+        font-family: 'Lemonada', cursive;
         font-weight: 400;
         color: #fff;
+        font-size: 16px;
 
     }
 
@@ -46,7 +51,7 @@
         width: 30%;
         padding: 8px;
         border-radius: 15px;
-        border:2px solid #333;
+        border:none;
         margin: 20px 0;
         transform: translateX(15px);
         background: lightgreen;
@@ -58,14 +63,15 @@
         border-radius: 20px;
         border: 1px solid #333;
         margin-top: 20px;
-        font-size: 17px;
-        font-family: sans-serif;
-        background: navajowhite;
+        font-size: 15px;
+        font-family: 'Lemonada', cursive;
+        background: crimson;
     }
     .res{
         padding-top: 20px;
     }
     .res h2{
+        font-size: 16px;
         font-weight: 400;
         text-align: center;
         color: #fff;
@@ -107,6 +113,8 @@
     .yozuv h3{
         font-size: 40px;
         color: #fff;
+        font-size: 30px;
+
     }
     .yozuv h2{
         text-align: left;
@@ -116,6 +124,7 @@
         color:#fff;
         position: absolute;
         top:8px;
+        font-family: sans-serif;
     }
     .dr1{
         left: 10%;
@@ -136,7 +145,7 @@
         width: 100%;
         height: 100vh;
         align-items: center;
-        background: #333;
+        background: #191919;
         color:#fff;
         font-family: monospace;
     }
@@ -156,7 +165,7 @@
     
     button:hover{
         cursor: pointer;
-        background: crimson;
+        background: lightsalmon;
     }
     @media(max-width:800px){
         .yozuv{
@@ -191,6 +200,9 @@
     .dr3{
         left: 81%;;
     }
+    #dfg{
+        font-family: sans-serif;
+    }
 
     
         
@@ -208,13 +220,12 @@
     
     <div class="bmi">
 
-        <nav><h2>BMI calculator</h2></nav>
        <div class="div">
         <h3>Your height : cm</h3>
-        <input type="text" id="f1">
+        <input type="text" id="f1" placeholder="....">
         
         <h3>Your weight : kg</h3>
-        <input type="text"  id="f2">
+        <input type="text"  id="f2" placeholder="....">
         
         <br>
         
@@ -246,11 +257,12 @@
 
 <br>
        <a  style="color:#fff" href="https://devhmt.netlify.app" target="_blank">about me</a>
+       <p style="display: inline-block; padding-left: 5px;">version 1.0.2</p>
 </div>
          
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./jquery.min.js"></script>
     
     <script>
     
