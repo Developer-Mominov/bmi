@@ -26,7 +26,7 @@
     }
    
       .div{
-          width: 70%;
+          width: 100%;
 
           margin: 10px auto;
           border: 2px solid #ffff;  
@@ -156,18 +156,29 @@
    }
     body{
         width: 100%;
-        height: 100%;
+        height: 100vh;
         overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .bmi{
         display: none;
+        width: 70%;
     }
     
     button:hover{
         cursor: pointer;
         background: lightsalmon;
     }
+    .load h2,.load h3{
+        font-family: sans-serif;
+    }
     @media(max-width:800px){
+        .bmi{
+            width: 85%;
+        }
+
         .yozuv{
             margin: 10px 0;
             width: 50%;
@@ -189,7 +200,7 @@
         .dr{
             font-size: 13px;
         }
-
+       
 
         .dr1{
         left: 9%;
@@ -213,7 +224,7 @@
 <body onload="loading()">
     
     <div class="load">
-        <h2>HMT team's product </h2>
+        <h2>X.M.T team's product </h2>
         <br>
         <h3>BMI calculator</h3>    
     </div>
@@ -222,10 +233,10 @@
 
        <div class="div">
         <h3>Your height : cm</h3>
-        <input type="text" id="f1" placeholder="write here">
+        <input type="text" id="f1" placeholder="enter here">
         
         <h3>Your weight : kg</h3>
-        <input type="text"  id="f2" placeholder="write here">
+        <input type="text"  id="f2" placeholder="enter here">
         
         <br>
         
@@ -261,8 +272,7 @@
 </div>
          
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     
     <script>
@@ -333,3 +343,4 @@
 
 </body>
 </html>
+       
